@@ -13,13 +13,16 @@
   },
   "extends": [
     "next/core-web-vitals",
+    "plugin:react/recommended",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "prettier" //prettier/@typescript-eslint 병합됨
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
-    "no-useless-catch": "off"
+    "no-useless-catch": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "prefer-const": "warn"
   }
 }
