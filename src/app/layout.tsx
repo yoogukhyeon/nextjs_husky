@@ -13,7 +13,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  let qq = '2'
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
