@@ -1,5 +1,23 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Nextjs 14, TypeScript 프로젝트에 ESlint, Stylelint, Prettier, Husky, Lint-Staged
+
+First, run the development server:
+
+```bash
+npm install
+# or
+npm run lint //eslint 체킹
+```
+
+프로젝트 .git config 파일에 hooksPath = .husky/_ 셋팅
+
+git commit 할경우 .husky pre-commit: npm run lint-staged --concurrent false 명령어로 eslint & prettier 오류를 알려준다. (오류 수정을 안할경우 commit이 안된다.)
+
+eslint & prettier 규칙을 엄격하게 관리할수 있다.
+
+packages.json에 "postinstall": "husky install" script는 다른 개발자가 git clone시에 husky install 할수 있도록 돕니다.
+
 ## Getting Started
 
 First, run the development server:
